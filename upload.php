@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<h1>Uploading To CSE</h1>
-  </body>
-</html>
 <?php 
 
 if (isset($_POST['submit']) && isset($_FILES['my_video'])) {
@@ -39,11 +26,11 @@ if (isset($_POST['submit']) && isset($_FILES['my_video'])) {
             header("Location: view.php");
     	}else {
     		$em = "You can't upload files of this type";
-    		header("Location: index.php?error=$em");
+    		header("Location: index_cse.php?error=$em");
     	}
     }
 
 
 }else{
-	header("Location: index.php");
+	header("Location: index_cse.php");
 }

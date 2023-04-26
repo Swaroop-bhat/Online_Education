@@ -23,7 +23,7 @@
 	</style>
 </head>
 <body>
-	<a href="view.php">Videos</a>
+	<a href="ISE_view.php">For ISE Videos Upload</a>
 	<?php if (isset($_GET['error'])) {  ?>
 		<p><?=$_GET['error']?></p>
 	<?php } ?>
